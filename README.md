@@ -1,4 +1,4 @@
-This script lets you run terraria 1.4.4.9 server on termux.
+This script lets you run terraria 1.4.5.0 server on termux.
 
 
 For the first time use
