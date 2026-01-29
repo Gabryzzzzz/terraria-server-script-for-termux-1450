@@ -49,6 +49,7 @@ EOF
     source "$HOME/.bashrc" 2>/dev/null
 
     clear
-    echo "✅ Terraria server installed successfully!"
+    echo "✅  Terraria server installed successfully!"
     echo "➡️  To start the server, type: tserver"
+    echo "➡️  If tserver command doesn't work go into ./1450/Linux folder and run tserver"
 fi
