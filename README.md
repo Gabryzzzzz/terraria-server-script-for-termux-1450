@@ -1,8 +1,28 @@
-This script lets you run terraria 1.4.5.0 server on termux.
+# Terraria On Android
+This repo contains a script to deploy a Terraria server on Android using the Termux app.
 
-For the first time use
+## Installation
+The script in this repo lets you run a Terraria server on Termux. It has been updated from the original script _(linked below)_ to enable choosing which version you would like to run. To change the server version download the tserver file, or fork this repo, and edit the "Version Config" section of the tserver script. 
 
-``` cd && git clone https://github.com/Gabryzzzzz/terraria-server-script-for-termux-1450.git && chmod +x terraria-server-script-for-termux-1450/tserver && ./terraria-server-script-for-termux-1450/tserver  ```
+Once you have chosen the server version for the first time use enter the following command:
 
-To run type 
+``` cd && git clone https://github.com/kane9287/terraria-server-script-termux.git && chmod +x terraria-server-script-termux/tserver && ./terraria-server-script-termux/tserver  ```
+
+Follow the prompts and after the server has installed type the following to start the server: 
+
 ``` tserver  ```
+
+To stop the server type ``` exit ``` in the Termux terminal.
+
+If you are updating the server to a new version you will need to delete the git clone folder. Use this command to delete and reclone 
+
+``` cd && rm -rf terraria-server-script-termux && git clone https://github.com/kane9287/terraria-server-script-termux.git && chmod +x terraria-server-script-termux/tserver && ./terraria-server-script-termux/tserver ```
+
+This script has been tested and works on a lower powered Android device the Motorola Moto G Power XT2165DL. This has 4GB RAM and a quad core processor, with a single player it uses about 1% per 45-60m of play.
+
+### Credits
+**The OG tserver script author:** https://github.com/gediminas748/terraria-server-script-for-termux  
+**Author of an MC server script for Termux. This script was instrumental in putting server files in an editable folder on Android sans root:** https://github.com/ramide1/mc-server-termux  
+
+#### AI Disclaimer
+Claude.ai - Helped mash the files together with a prompt and some cleanup.
